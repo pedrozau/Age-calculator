@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age calculator</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+     <div id="app">
+        <div class="title">
+            <h1>Age calculator</h1>
+            <span>Caculate age from date of birth and current date</span>
+        </div>
+
+        <div class="content">
+            <label class="birth" for="">Date of birth</label>
+            <select class="setmonth" name="" v-model="firstMonth" id="">
+                <option value="0">Jameiro</option>
+                <option value="1">Fevereiro</option>
+                <option value="2">Março</option>
+                <option value="3">Abril</option>
+                <option value="4">Maio</option>
+                <option value="5">Junho</option>
+                <option value="6">Julho</option>
+                <option value="7">Agosto</option>
+                <option value="8">Setembro</option>
+                <option value="9">Octubro</option>
+                <option value="10">Nevembro</option>
+                <option value="11">Desembro</option>
+            </select>
+            <select class="setday" name="" id="" v-model="firstDay">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                 <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="28">29</option>
+                   <option value="30">30</option>
+                    <option value="31">31</option>
+            </select>
+            <input class="setyear" type="text" placeholder="Year" v-model="firstYear">
+            <label for="">Age at the date of</label>
+            <select class="setmonth" name="" id="" v-model="segMonth">
+                <option value="0">Jameiro</option>
+                <option value="1">Fevereiro</option>
+                <option value="2">Março</option>
+                <option value="3">Abril</option>
+                <option value="4">Maio</option>
+                <option value="5">Junho</option>
+                <option value="6">Julho</option>
+                <option value="7">Agosto</option>
+                <option value="8">Setembro</option>
+                <option value="9">Octubro</option>
+                <option value="10">Nevembro</option>
+                <option value="11">Desembro</option>
+            </select>
+            <select class="setday" name="" id="" v-model="segDay">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                 <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                   <option value="25">25</option>
+                   <option value="26">26</option>
+                   <option value="27">27</option>
+                   <option value="28">28</option>
+                   <option value="28">29</option>
+                   <option value="30">30</option>
+                    <option value="31">31</option>
+            </select>
+            <input class="setyear" type="text" placeholder="Year" v-model="segYear">
+                 <div class="btn">
+                     <input class="calc" type="submit" value="caculate" @click="cal()">
+                     <input class="res" type="submit" value="Reset" @click="reset()">
+
+                 </div>
+            <p>Age result</p>
+
+             <div class="result">
+
+               <p>  {{ age }} years, {{month}} months, {{day}} days</p>
+            
+
+
+             </div>
+             
+        </div>
+
+     </div>
+
+     <script src="script.js"></script>
+    
+</body>
+</html>

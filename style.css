@@ -1,0 +1,107 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body  {
+
+     background:rgba(12, 12, 12, 0.727);
+}
+
+#app {
+   
+    width:500px;
+    margin:auto;
+
+}
+
+.title  {
+  
+     background:#fff;
+     padding:10px;
+     text-align: center;
+  
+
+}
+
+
+
+.title span {
+    color:rgb(175, 61, 61);
+    font-size:15pt;
+    
+}
+
+.content {
+ 
+    background:rgb(201, 119, 12);
+    padding:10%;
+
+}
+
+.content label {
+   display: block;
+   padding:10px;
+}
+
+.setmonth {
+    width:130px;
+    padding:10px;
+    border:none;
+    border-radius: 4px;
+}
+.setday {
+    width:60px;
+    padding:10px;
+    border:none;
+    border-radius: 4px;
+}
+
+.setyear {
+    width:100px;
+    padding:10px;
+    border:none;
+    border-radius:4px;
+
+}
+
+.content p {
+    padding:10px;
+}
+
+.btn {
+    display: block;
+    
+}
+
+.calc {
+     width:180;
+     padding:8px;
+     background:green;
+     border:none;
+     border-radius:4px;
+     margin:10px;
+     color:#fff;
+}
+.res {
+    width:100;
+    padding:5px;
+    background:red;
+    border:none;
+    border-radius:4px;
+    margin:3px;
+    color:#fff;
+}
+
+.result {
+  
+     width:350px;
+     height: 50px;
+     padding:15px;
+     
+     background:rgba(12, 12, 12, 0.727);
+     color:#fff;
+     border-radius: 2px;
+     overflow:auto;
+
+}
